@@ -9,6 +9,7 @@ output:
   pagedown::html_resume:
     css: ['dd_cv.css', 'resume']
     self_contained: true
+
 ---
 
 ```{r, include=FALSE}
