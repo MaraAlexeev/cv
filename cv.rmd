@@ -114,7 +114,7 @@ Research Experience {data-icon=laptop}
 --------------------------------------------------------------------------------
 
 ```{r}
-CV %<>% print_section('research_positions')
+#CV %<>% print_section('research_positions')
 ```
 
 
@@ -157,12 +157,12 @@ Selected Data Science Writing {data-icon=chart-line}
 
 ::: aside
 ```{r}
-CV %<>% print_text_block('data_science_writing_aside')
+#CV %<>% print_text_block('data_science_writing_aside')
 ```
 :::
 
 ```{r}
-CV %<>% print_section('data_science_writings')
+#CV %<>% print_section('data_science_writings')
 ```
 
 Medical Credentials  {data-icon=medkit}
