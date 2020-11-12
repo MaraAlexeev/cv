@@ -1,9 +1,9 @@
 ---
-title: "Presentation Ninja"
-subtitle: "⚔<br/>with xaringan"
-author: "Yihui Xie"
-institute: "RStudio, PBC"
-date: "2016/12/12 (updated: `r Sys.Date()`)"
+title: "R-Ladies Boston: CV Workshop"
+subtitle: "Tidy Your Career Information"
+author: "Mara Alexeev, MD, MPH"
+institute: "Boston Children's Hospital"
+date: "2020/11/19 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -11,30 +11,92 @@ output:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
+ 
 ---
+# **Workshop goals**
 
-background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/be/Sharingan_triple.svg)
+## Just Write It Down!
 
-```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE)
-```
+## Introduce New Tools
 
-???
+## Repurpose Old Tools
 
-Image credit: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sharingan_triple.svg)
+## Don't Overshare — Shine!
+
+---
+# Imagine that you need to...
+.pull-left[
+- submit an updated CV for a job application as a pdf
+
+- enter your CV into a horrible custom web form
+
+- post your CV on your website
+
+- remember what you did summer of 2009
+]
+
+.pull-right[
+![an image](foo.png)
+]
 
 ---
 class: center, middle
+# **What does that feel like?**
+---
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b0/Defense.gov_News_Photo_120114-F-CB366-912_-_Senior_Airman_Danielle_Sturdivant_with_the_56th_Communications_Squadron_at_Luke_Air_Force_Base_Ariz._crawls_through_the_electric_eel_obstacle.jpg)
+background-position: center
+background-size: contain
 
-# xaringan
 
-### /ʃaː.'riŋ.ɡan/
+
+
+Image credit: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Defense.gov_News_Photo_120114-F-CB366-912_-_Senior_Airman_Danielle_Sturdivant_with_the_56th_Communications_Squadron_at_Luke_Air_Force_Base_Ariz._crawls_through_the_electric_eel_obstacle.jpg)
 
 ---
 class: inverse, center, middle
 
-# Get Started
+# **Just Write It Down!**
 
+---
+class: center, middle
+
+# What's better than a perfect CV?
+
+
+---
+class: center, middle
+
+# A **DONE** CV
+
+---
+class: center, top
+
+# CV Basics
+???
+* Open your email
+* Start a new message
+* Address it to your ~~self~~ *future* self
+* Put "Raw CV info" in your subject
+* Write some tidbit of career information in the body
+* Send it
+--
+
+* The most important thing is to be able to find it
+--
+
+* Raw CV info isn't something special, but you need to mark it for future you to be able to sort through your 50K emails
+---
+## Header
+
+???
+* notes
+* notes
+--
+
+* Bullet point 1
+--
+
+* Bullet point 2
 ---
 
 # Hello World
