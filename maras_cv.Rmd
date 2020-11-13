@@ -49,15 +49,16 @@ Aside
 ```{r}
 # Build interactive network of positions colored by section
 # and connected if they occurred in the same year
-datadrivencv::build_network_logo(CV$entries_data)
+#datadrivencv::build_network_logo(CV$entries_data)
+knitr::include_graphics('./headshot.jpg')
 ```
 
 
 ```{r}
 if(params$pdf_mode){
-  cat("[View this CV online with links](https://maraalexeev.github.io/cv/)")
+  cat("View this CV online with links at maraalexeev.github.io/cv/")
 } else {
-  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://maraalexeev.github.io/cv/)")
+  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/MaraAlexeev/cv/blob/master/docs/public_cv.pdf)")
 }
 ```
 
@@ -110,23 +111,8 @@ CV %<>% print_section('education')
 
 
 
-Research Experience {data-icon=laptop}
---------------------------------------------------------------------------------
-
-```{r}
-#CV %<>% print_section('research_positions')
-```
-
-
-
 Medical Work Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
-
-::: aside
-```{r}
-CV %<>% print_text_block('medical_work_experience_aside')
-```
-:::
 
 ```{r}
 CV %<>% print_section('medical_work_experience')
@@ -140,30 +126,16 @@ CV %<>% print_section('medical_work_experience')
 Teaching Experience {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
 
-::: aside
-```{r}
-CV %<>% print_text_block('teaching_experience_aside')
-```
-:::
+<!-- ::: aside -->
+<!-- ```{r} -->
+<!-- CV %<>% print_text_block('teaching_experience_aside') -->
+<!-- ``` -->
+<!-- ::: -->
 
 ```{r}
 CV %<>% print_section('teaching_positions')
 ```
 
-
-
-Selected Data Science Writing {data-icon=chart-line}
---------------------------------------------------------------------------------
-
-::: aside
-```{r}
-#CV %<>% print_text_block('data_science_writing_aside')
-```
-:::
-
-```{r}
-#CV %<>% print_section('data_science_writings')
-```
 
 Medical Credentials  {data-icon=medkit}
 --------------------------------------------------------------------------------
@@ -172,40 +144,15 @@ Medical Credentials  {data-icon=medkit}
 CV %<>% print_section('medical_credentials')
 ```
 
-
-<br>
-<br>
-
-
-
-Selected Press (About)  {data-icon=newspaper}
+Awards and Honors  {data-icon=medkit}
 --------------------------------------------------------------------------------
 
 ```{r}
-CV %<>% print_section('about_me_press')
+CV %<>% print_section('awards_honors')
 ```
-
 
 <br>
 <br>
-
-
-Selected Press (By)  {data-icon=newspaper}
---------------------------------------------------------------------------------
-
-```{r}
-CV %<>% print_section('by_me_press')
-```
-
-
-
-Selected Publications, Posters, and Talks {data-icon=book}
---------------------------------------------------------------------------------
-
-```{r}
-CV %<>% print_section('academic_articles')
-```
-
 
 
 ```{r}
