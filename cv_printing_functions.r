@@ -16,7 +16,8 @@
 #' @return A new `CV_Printer` object.
 create_CV_object <-  function(data_location,
                               pdf_mode = FALSE,
-                              sheet_is_publicly_readable = TRUE) {
+                              sheet_is_publicly_readable = TRUE,
+                              resume_mode = FALSE) {
 
   cv <- list(
     pdf_mode = pdf_mode,
@@ -52,6 +53,9 @@ create_CV_object <-  function(data_location,
     cv$contact_info <- readr::read_csv(paste0(data_location, "contact_info.csv"), skip = 1)
   }
 
+  if(resume_mode){
+    cv$entries_data %<>% dplyr::filter(in_resume == "TRUE")
+  }
 
   extract_year <- function(dates){
     date_year <- stringr::str_extract(dates, "(20|19)[0-9]{2}")
