@@ -31,7 +31,7 @@ class: center, middle, inverse, title-slide
 ## Tidy Your Career Information
 ### Mara Alexeev, MD, MPH
 ### Boston Children’s Hospital
-### 2020/11/19 (updated: 2020-11-11)
+### 2020/11/19 (updated: 2020-11-15)
 
 ---
 
@@ -46,9 +46,42 @@ class: center, middle, inverse, title-slide
 ## Don't Overshare — Shine!
 
 ---
+# What this workshop is not about
+???
+Here's what we won't talk about  
+
+These are important things, but just not what we are covering today 
+
+I mention them because they are super important part of the job process
+
+And a reminder that a CV is just part of the process  
+
+If fact the idea of a dream job is sort of lame
+
+And while these aren't the goals of today's talk, if there is interest we can host another one
+
+Share quick story of returning to work after having a baby
+--
+
+## Where to find your dream job*
+
+## Getting the skills for your dream job
+
+## Networking
+
+## Negotiating terms
+
+## Discussing your CV specifics 
+
+.footnote[[*] Job hunting is horrible process it's not you!]
+---
+background-image: url("./cv_workshop_slides_files/pained_face.png")
+background-position: right bottom
+
 # Imagine that you need to...
 .pull-left[
-- submit an updated CV for a job application as a pdf
+- submit an updated CV for a    
+job application as a pdf
 
 - enter your CV into a horrible custom web form
 
@@ -57,9 +90,7 @@ class: center, middle, inverse, title-slide
 - remember what you did summer of 2009
 ]
 
-.pull-right[
-![an image](foo.png)
-]
+
 
 ---
 class: center, middle
@@ -71,8 +102,10 @@ background-size: contain
 
 
 
+class: bottom, right
 
-Image credit: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Defense.gov_News_Photo_120114-F-CB366-912_-_Senior_Airman_Danielle_Sturdivant_with_the_56th_Communications_Squadron_at_Luke_Air_Force_Base_Ariz._crawls_through_the_electric_eel_obstacle.jpg)
+Image credit: 
+[Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Defense.gov_News_Photo_120114-F-CB366-912_-_Senior_Airman_Danielle_Sturdivant_with_the_56th_Communications_Squadron_at_Luke_Air_Force_Base_Ariz._crawls_through_the_electric_eel_obstacle.jpg)
 
 ---
 class: inverse, center, middle
@@ -87,144 +120,231 @@ class: center, middle
 
 ---
 class: center, middle
-
-# A **DONE** CV
-
----
-class: center, top
-
-# CV Basics
 ???
-* Open your email
-* Start a new message
-* Address it to your ~~self~~ *future* self
-* Put "Raw CV info" in your subject
-* Write some tidbit of career information in the body
-* Send it
---
+Because a perfect CV doesn't exist!!! 
 
-* The most important thing is to be able to find it
---
+# a **DONE** cv
 
-* Raw CV info isn't something special, but you need to mark it for future you to be able to sort through your 50K emails
 ---
-## Header
+class: top
+
+# CV Basics, 1
 
 ???
-* notes
-* notes
+test 
 --
 
-* Bullet point 1
+* Quickstart guide
+  + Open your email  
+  + Start a new message  
+  + Address it to your ~~self~~ *future* self
+  + Put "Raw CV info" in your subject
+  + Write some tidbit of career information in the body
+  + Send it
 --
 
-* Bullet point 2
+* The **most** important thing is to be able to find it
+--
+
+* Raw CV info isn't something special, but you need to mark it for **future you** to be able to sort through your 50K emails
+
+---
+class: top
+
+# CV Basics, 2
+
+???
+--
+
+## Truthful
+--
+
+## Accurate
+--
+
+## Current
+---
+class: top
+
+# CV Basics, 3
+
+???
+notes
+--
+
+### Resume or Résumé  
+  + Fancy French word for 'summary'
+  + In American English both spellings are acceptable
+  + And yes the word resume (meaning to restart or to continue) is spelled the same but said differently
+  + Generally, a short form tailored for the current position of interest
+--
+
+### Curriculum Vitae aka *CV*
+  + Fancy Latin for 'course of life'
+  + Generally, a painfully exhaustive and long form
+--
+
+## And that's only half of it!
+  + The use of these terms differs in different English speaking locales!
+
+---
+class: center, middle
+
+# Which one to use??
+
+---
+class: inverse, center, middle
+???
+asdf 
+
+--
+# It, of course, depends...
+---
+class: top
+
+# CV Basics, 4
+
+???
+Find out!
+Government jobs are notorious for this
+--
+
+## Some positions just say "attach a resume"
+--
+
+## Many academic positions want a CV
+--
+
+## And of course some positions demand some horrible custom form
+
 ---
 
-# Hello World
+# Making a CV or Resume in R
 
-Install the **xaringan** package from [Github](https://github.com/yihui/xaringan):
+Packages of interest:
 
 
 ```r
-devtools::install_github("yihui/xaringan")
+devtools::install_github("nstrayer/datadrivencv")
 ```
 
+
+```r
+install.packages('vitae')
+```
+
+
+```r
+install.packages("stevetemplates")
+```
+
+
+```r
+devtools::install_github("jaredlander/resumer")
+```
+---
+
+# My Example Workflow and CV
+
+Let's take a look at where I was a few weeks ago and where I am now
+
+- Information everywhere **and** nowhere
+
+- Every CV was a three part problem
+  + Find all my information
+  + Decide what to include
+  + Format it
+  
+- Disappointing results — I'm not a designer!
+
+- Not leveraging my past efforts
+
+It is important to reminder the best process is the process that works well (or at least good enough) for you!
+
+---
+???
+Not sure what it was used for
+Information leakage (like socks in the wash)
+
 --
-
-You are recommended to use the [RStudio IDE](https://www.rstudio.com/products/rstudio/), but you do not have to.
-
-- Create a new R Markdown document from the menu `File -&gt; New File -&gt; R Markdown -&gt; From Template -&gt; Ninja Presentation`;&lt;sup&gt;1&lt;/sup&gt;
-
---
-
-- Click the `Knit` button to compile it;
-
---
-
-- or use the [RStudio Addin](https://rstudio.github.io/rstudioaddins/)&lt;sup&gt;2&lt;/sup&gt; "Infinite Moon Reader" to live preview the slides (every time you update and save the Rmd document, the slides will be automatically reloaded in RStudio Viewer.
-
-.footnote[
-[1] 中文用户请看[这份教程](https://slides.yihui.org/xaringan/zh-CN.html)
-
-[2] See [#2](https://github.com/yihui/xaringan/issues/2) if you do not see the template or addin in RStudio.
-]
-
----
-background-image: url(https://github.com/yihui/xaringan/releases/download/v0.0.2/karl-moustache.jpg)
-background-position: 50% 50%
-class: center, bottom, inverse
-
-# You only live once!
-
----
-
-# Hello Ninja
-
-As a presentation ninja, you certainly should not be satisfied by the "Hello World" example. You need to understand more about two things:
-
-1. The [remark.js](https://remarkjs.com) library;
-
-1. The **xaringan** package;
-
-Basically **xaringan** injected the chakra of R Markdown (minus Pandoc) into **remark.js**. The slides are rendered by remark.js in the web browser, and the Markdown source needed by remark.js is generated from R Markdown (**knitr**).
-
----
-
-# remark.js
-
-You can see an introduction of remark.js from [its homepage](https://remarkjs.com). You should read the [remark.js Wiki](https://github.com/gnab/remark/wiki) at least once to know how to
-
-- create a new slide (Markdown syntax&lt;sup&gt;*&lt;/sup&gt; and slide properties);
-
-- format a slide (e.g. text alignment);
-
-- configure the slideshow;
-
-- and use the presentation (keyboard shortcuts).
-
-It is important to be familiar with remark.js before you can understand the options in **xaringan**.
-
-.footnote[[*] It is different with Pandoc's Markdown! It is limited but should be enough for presentation purposes. Come on... You do not need a slide for the Table of Contents! Well, the Markdown support in remark.js [may be improved](https://github.com/gnab/remark/issues/142) in the future.]
-
----
-background-image: url(https://github.com/yihui/xaringan/releases/download/v0.0.2/karl-moustache.jpg)
+background-image: url("./old_cvs/screenshots_of_pile_of_cvs.png")
 background-size: cover
-class: center, bottom, inverse
+class: center, middle
 
-# I was so happy to have discovered remark.js!
+
+# The HORRORS of multiple verisons
 
 ---
 class: inverse, middle, center
 
-# Using xaringan
+# Workflow First, Details Second
 
 ---
+???
+notes
 
-# xaringan
+background-image: url("./cv_workshop_slides_files/pooh_bear_meme.jpg")
+background-position: right bottom
 
-Provides an R Markdown output format `xaringan::moon_reader` as a wrapper for remark.js, and you can use it in the YAML metadata, e.g.
 
-```yaml
+# Workflow
+
+My **absolute basic workflow** 
+ * I send myself an email that has   
+ "Raw CV info" somewhere in it.
+
+--
+
+My **black tie workflow** 
+ * I dump stuff in a googlesheet.
+
+--
+
+My **white tie workflow** 
+ * I dump stuff in a googlesheet     
+ in a highly structured way!
+
 ---
-title: "A Cool Presentation"
-output:
-  xaringan::moon_reader:
-    yolo: true
-    nature:
-      autoplay: 30000
+???
+Storage coupled with usage and deployment
+Unstructure and structured
+Only some sheets and columns are used
+THERE IS NO Lockin! You can use the data easily for any format
+
+background-image: url("./cv_workshop_slides_files/googlesheet.png")
+background-position: center
+
+# Take a peak at my sheet
+
+I started this method and didn't have much success until I found the Nick Strayer's datadrivencv package.
+
+
 ---
-```
+???
+NOTE THIS IS NOT REAL INFORMATION (some is, some is not, some is aspirational)
+Versions of my cv can be saved with a name that means something: MaraAlexeev_BCHcv.pdf
+I can run a script that makes a pdf version and an html version at the same time.
+It places both into my /docs folder so that when I push to my github it updates my github page.
+And my personal website is linked to that github page so I only have to update that not my website!
 
-See the help page `?xaringan::moon_reader` for all possible options that you can use.
+The basic script is in the datadrivencv 
+
+
+I don't have this currently active because I am still in the process of updating my REAL cv, but I can see it because I have access to my private repo,
+
+
+
+
+background-image: url("./cv_workshop_slides_files/example_cv.png")
+background-position: center
+
+# Take a peak at my example CV
+
+
+
 
 ---
-
-# remark.js vs xaringan
-
-Some differences between using remark.js (left) and using **xaringan** (right):
-
-.pull-left[
+# Examples from 
 1. Start with a boilerplate HTML file;
 
 1. Plain Markdown;
@@ -398,8 +518,8 @@ library(leaflet)
 leaflet() %&gt;% addTiles() %&gt;% setView(-93.65, 42.0285, zoom = 17)
 ```
 
-<div id="htmlwidget-f0d3b89a46bcbd6d2646" style="width:100%;height:432px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-f0d3b89a46bcbd6d2646">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[42.0285,-93.65],17,[]]},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-9a2e9d5a09f3d436b3bb" style="width:100%;height:432px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-9a2e9d5a09f3d436b3bb">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[42.0285,-93.65],17,[]]},"evals":[],"jsHooks":[]}</script>
 
 ---
 
@@ -411,22 +531,10 @@ DT::datatable(
 )
 ```
 
-<div id="htmlwidget-58f8e4d04ae1459aabc6" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-58f8e4d04ae1459aabc6">{"x":{"filter":"none","fillContainer":false,"data":[["1","2","3","4","5","6","7","8","9","10"],[5.1,4.9,4.7,4.6,5,5.4,4.6,5,4.4,4.9],[3.5,3,3.2,3.1,3.6,3.9,3.4,3.4,2.9,3.1],[1.4,1.4,1.3,1.5,1.4,1.7,1.4,1.5,1.4,1.5],[0.2,0.2,0.2,0.2,0.2,0.4,0.3,0.2,0.2,0.1],["setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Sepal.Length<\/th>\n      <th>Sepal.Width<\/th>\n      <th>Petal.Length<\/th>\n      <th>Petal.Width<\/th>\n      <th>Species<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":8,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[8,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-52d02830d313cf222553" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-52d02830d313cf222553">{"x":{"filter":"none","fillContainer":false,"data":[["1","2","3","4","5","6","7","8","9","10"],[5.1,4.9,4.7,4.6,5,5.4,4.6,5,4.4,4.9],[3.5,3,3.2,3.1,3.6,3.9,3.4,3.4,2.9,3.1],[1.4,1.4,1.3,1.5,1.4,1.7,1.4,1.5,1.4,1.5],[0.2,0.2,0.2,0.2,0.2,0.4,0.3,0.2,0.2,0.1],["setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Sepal.Length<\/th>\n      <th>Sepal.Width<\/th>\n      <th>Petal.Length<\/th>\n      <th>Petal.Width<\/th>\n      <th>Species<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":8,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[8,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 
----
 
-# Some Tips
-
-- Do not forget to try the `yolo` option of `xaringan::moon_reader`.
-
-    ```yaml
-    output:
-      xaringan::moon_reader:
-        yolo: true
-    ```
-
----
 
 # Some Tips
 
