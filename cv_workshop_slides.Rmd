@@ -3,7 +3,7 @@ title: "R-Ladies Boston: CV Workshop"
 subtitle: "Tidy Your Career Information"
 author: "Mara Alexeev, MD, MPH"
 institute: "Boston Children's Hospital"
-date: "2020/11/19 (updated: `r Sys.Date()`)"
+date: "2020-11-19 (Last updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -23,8 +23,35 @@ output:
 
 ## Don't Overshare — Shine!
 
+???
+Who I am and why I am talking
+
+Talk about my journey to R
+
+Talk about finding RLadies
+
+Intimated by the preceived gulf between my skills
+
+I want to lay out what we will cover today
+Four parts
+
 ---
 # What this workshop is not about
+
+
+
+### Where to find your dream job*
+
+### Getting the skills for your dream job
+
+### Networking
+
+### Negotiating terms
+
+### Discussing your CV specifics 
+
+.footnote[[*] Job hunting is a horrible process — it's not you!]
+
 ???
 Here's what we won't talk about  
 
@@ -39,19 +66,6 @@ If fact the idea of a dream job is sort of lame
 And while these aren't the goals of today's talk, if there is interest we can host another one
 
 Share quick story of returning to work after having a baby
---
-
-## Where to find your dream job*
-
-## Getting the skills for your dream job
-
-## Networking
-
-## Negotiating terms
-
-## Discussing your CV specifics 
-
-.footnote[[*] Job hunting is horrible process it's not you!]
 ---
 background-image: url("./cv_workshop_slides_files/pained_face.png")
 background-position: right bottom
@@ -65,7 +79,7 @@ job application as a pdf
 
 - post your CV on your website
 
-- remember what you did summer of 2009
+- remember what you did Summer of 2009
 ]
 
 
@@ -85,6 +99,8 @@ class: bottom, right
 Image credit: 
 [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Defense.gov_News_Photo_120114-F-CB366-912_-_Senior_Airman_Danielle_Sturdivant_with_the_56th_Communications_Squadron_at_Luke_Air_Force_Base_Ariz._crawls_through_the_electric_eel_obstacle.jpg)
 
+???
+Actually this looks like more fun despite the fact that those little yellow wires are live with current
 ---
 class: inverse, center, middle
 
@@ -98,69 +114,83 @@ class: center, middle
 
 ---
 class: center, middle
+
+# a **DONE** cv
 ???
 Because a perfect CV doesn't exist!!! 
 
-# a **DONE** cv
-
 ---
 class: top
 
-# CV Basics, 1
+# CV Basics, *Just the facts, ma'am*
 
 ???
-test 
+You can be the most impressive person in the world/best candidate for a job, but if the person doesn't already know you you have to communicate it
 --
 
-* Quickstart guide
+### The **most** important thing is to be able to find it
+--
+
+### Raw CV info isn't something special, but you need to mark it for **future you** to be able to sort through your 50K emails
+--
+
+### Quickstart guide
+
   + Open your email  
   + Start a new message  
-  + Address it to your ~~self~~ *future* self
+  + Address it to your ~~self~~ *future* self 
   + Put "Raw CV info" in your subject
   + Write some tidbit of career information in the body
-  + Send it
---
-
-* The **most** important thing is to be able to find it
---
-
-* Raw CV info isn't something special, but you need to mark it for **future you** to be able to sort through your 50K emails
-
+  + Send it  
+  
 ---
-class: top
+class: inverse, center, middle
 
-# CV Basics, 2
+# **CONGRATULATIONS**
 
 ???
---
+You are on the way to having an amazing CV
+
+---
+
+class: top, center
+
+# CV Basics, Core Features
+
+
 
 ## Truthful
---
 
 ## Accurate
---
 
 ## Current
+
+
+???
+Sort of the order of badness here
 ---
 class: top
 
-# CV Basics, 3
-
-???
-notes
---
+# CV Basics, Terminology
 
 ### Resume or Résumé  
   + Fancy French word for 'summary'
   + In American English both spellings are acceptable
-  + And yes the word resume (meaning to restart or to continue) is spelled the same but said differently
+  + And yes the word resume (**meaning to restart or to continue**) is spelled the same but said differently
   + Generally, a short form tailored for the current position of interest
---
+  
+---
+class: top
+
+# CV Basics, Terminology
 
 ### Curriculum Vitae aka *CV*
   + Fancy Latin for 'course of life'
   + Generally, a painfully exhaustive and long form
---
+---
+class: top
+
+# CV Basics, Terminology
 
 ## And that's only half of it!
   + The use of these terms differs in different English speaking locales!
@@ -172,19 +202,20 @@ class: center, middle
 
 ---
 class: inverse, center, middle
-???
-asdf 
 
---
+
 # It, of course, depends...
+
 ---
 class: top
 
-# CV Basics, 4
+# CV Basics, **Know thine enemy...**
 
 ???
 Find out!
 Government jobs are notorious for this
+you should consider asking, and if there is no one to ask, then question whether it is worth your time applying
+I am super biased against cold call web submissions due to very bad personal experience
 --
 
 ## Some positions just say "attach a resume"
@@ -197,12 +228,24 @@ Government jobs are notorious for this
 
 ---
 
+
+class: inverse, center, middle
+
+# **Introduce New Tools**
+
+---
+
 # Making a CV or Resume in R
+
 
 Packages of interest:
 
 ```{r eval=FALSE, tidy=FALSE}
 devtools::install_github("nstrayer/datadrivencv")
+```
+
+```{r eval=FALSE, tidy=FALSE}
+install.packages("pagedown")
 ```
 
 ```{r eval=FALSE, tidy=FALSE}
@@ -216,6 +259,26 @@ install.packages("stevetemplates")
 ```{r eval=FALSE, tidy=FALSE}
 devtools::install_github("jaredlander/resumer")
 ```
+
+More general packageS to know
+```{r eval=FALSE, tidy=FALSE}
+install.packages("rmarkdown")
+
+install.packages("googlesheets4")
+```
+
+???
+show examples
+
+---
+
+class: inverse, center, middle
+
+# Repurpose Old Tools
+
+???
+I'm gonna say some controversial things: like spreadsheets are amazing!!!
+
 ---
 
 # My Example Workflow and CV
@@ -233,11 +296,13 @@ Let's take a look at where I was a few weeks ago and where I am now
 
 - Not leveraging my past efforts
 
-It is important to reminder the best process is the process that works well (or at least good enough) for you!
+It is important to remember the best process is the process that works well (*or at least good enough*) for you!
 
 ---
 ???
-Not sure what it was used for
+Prepare yourself
+Remeber I'm being vulernable here showing you my organizational sins
+
 Information leakage (like socks in the wash)
 
 --
@@ -254,8 +319,6 @@ class: inverse, middle, center
 # Workflow First, Details Second
 
 ---
-???
-notes
 
 background-image: url("./cv_workshop_slides_files/pooh_bear_meme.jpg")
 background-position: right bottom
@@ -278,504 +341,151 @@ My **white tie workflow**
  * I dump stuff in a googlesheet     
  in a highly structured way!
 
----
 ???
-Storage coupled with usage and deployment
-Unstructure and structured
-Only some sheets and columns are used
-THERE IS NO Lockin! You can use the data easily for any format
-
+I seriously think it makes very little difference what your final processing step is, it is the steps of collecting your data in one place
+---
 background-image: url("./cv_workshop_slides_files/googlesheet.png")
 background-position: center
 
 # Take a peak at my sheet
 
+
+???
 I started this method and didn't have much success until I found the Nick Strayer's datadrivencv package.
+
+Storage coupled with usage and deployment
+
+Unstructured and structured
+
+Only some sheets and columns are used
+
+THERE IS NO Lockin! You can use the data easily for any format
 
 
 ---
-???
-NOTE THIS IS NOT REAL INFORMATION (some is, some is not, some is aspirational)
-Versions of my cv can be saved with a name that means something: MaraAlexeev_BCHcv.pdf
-I can run a script that makes a pdf version and an html version at the same time.
-It places both into my /docs folder so that when I push to my github it updates my github page.
-And my personal website is linked to that github page so I only have to update that not my website!
-
-The basic script is in the datadrivencv 
-
-
-I don't have this currently active because I am still in the process of updating my REAL cv, but I can see it because I have access to my private repo,
-
-
-
-
 background-image: url("./cv_workshop_slides_files/example_cv.png")
 background-position: center
 
 # Take a peak at my example CV
+???
+NOTE THIS IS NOT REAL INFORMATION (some is, some is not, some is aspirational)
+
+Versions of my cv can be saved with a name that means something: MaraAlexeev_BCHcv.pdf
+
+I can run a script that makes a pdf version and an html version at the same time.
+
+It places both into my /docs folder so that when I push to my github it updates my github page.
+
+And my personal website is linked to that github page so I only have to update that not my website!
+
+The basic script is in the datadrivencv 
+
+I don't have this currently active because I am still in the process of updating my REAL cv, but I can see it because I have access to my private repo,
+
+
+---
+
+class: inverse, center, middle
+
+# Don't Overshare — Shine
+
+???
+I'm gonna say more controversial things: people don't read things
+
+---
+# Shine
+
+### Focus on skills
+
+### Make it loud and proud...and put it on top
+
+### Say more, by saying less
+---
+# Shine
+
+Have a good example to use for skill or accomplishment on your CV 
+
+Be able to send a *good enough* CV to someone in a few minutes
 
 
 
 
 ---
-# Examples from 
-1. Start with a boilerplate HTML file;
+# Proofreading and revising
 
-1. Plain Markdown;
+A huge benefit of reusing past work is refining it!
 
-1. Write JavaScript to autoplay slides;
+Put it away and see it with fresh eyes
 
-1. Manually configure MathJax;
-
-1. Highlight code with `*`;
-
-1. Edit Markdown source and refresh browser to see updated slides;
-]
-
-.pull-right[
-1. Start with an R Markdown document;
-
-1. R Markdown (can embed R/other code chunks);
-
-1. Provide an option `autoplay`;
-
-1. MathJax just works;<sup>*</sup>
-
-1. Highlight code with `{{}}`;
-
-1. The RStudio addin "Infinite Moon Reader" automatically refreshes slides on changes;
-]
-
-.footnote[[*] Not really. See next page.]
+CV pipeline is like reusing good, well written code
 
 ---
+background-image: url("./cv_workshop_slides_files/pained_face.png")
+background-position: right bottom
 
-# Math Expressions
-
-You can write LaTeX math expressions inside a pair of dollar signs, e.g. &#36;\alpha+\beta$ renders $\alpha+\beta$. You can use the display style with double dollar signs:
-
-```
-$$\bar{X}=\frac{1}{n}\sum_{i=1}^nX_i$$
-```
-
-$$\bar{X}=\frac{1}{n}\sum_{i=1}^nX_i$$
-
-Limitations:
-
-1. The source code of a LaTeX math expression must be in one line, unless it is inside a pair of double dollar signs, in which case the starting `$$` must appear in the very beginning of a line, followed immediately by a non-space character, and the ending `$$` must be at the end of a line, led by a non-space character;
-
-1. There should not be spaces after the opening `$` or before the closing `$`.
-
-1. Math does not work on the title slide (see [#61](https://github.com/yihui/xaringan/issues/61) for a workaround).
-
----
-
-# R Code
-
-```{r comment='#'}
-# a boring regression
-fit = lm(dist ~ 1 + speed, data = cars)
-coef(summary(fit))
-dojutsu = c('地爆天星', '天照', '加具土命', '神威', '須佐能乎', '無限月読')
-grep('天', dojutsu, value = TRUE)
-```
-
----
-
-# R Plots
-
-```{r cars, fig.height=4, dev='svg'}
-par(mar = c(4, 4, 1, .1))
-plot(cars, pch = 19, col = 'darkgray', las = 1)
-abline(fit, lwd = 2)
-```
-
----
-
-# Tables
-
-If you want to generate a table, make sure it is in the HTML format (instead of Markdown or other formats), e.g.,
-
-```{r}
-knitr::kable(head(iris), format = 'html')
-```
-
----
-
-# HTML Widgets
-
-I have not thoroughly tested HTML widgets against **xaringan**. Some may work well, and some may not. It is a little tricky.
-
-Similarly, the Shiny mode (`runtime: shiny`) does not work. I might get these issues fixed in the future, but these are not of high priority to me. I never turn my presentation into a Shiny app. When I need to demonstrate more complicated examples, I just launch them separately. It is convenient to share slides with other people when they are plain HTML/JS applications.
-
-See the next page for two HTML widgets.
-
----
-
-```{r out.width='100%', fig.height=6, eval=require('leaflet')}
-library(leaflet)
-leaflet() %>% addTiles() %>% setView(-93.65, 42.0285, zoom = 17)
-```
-
----
-
-```{r eval=require('DT'), tidy=FALSE}
-DT::datatable(
-  head(iris, 10),
-  fillContainer = FALSE, options = list(pageLength = 8)
-)
-```
-
-
-
-# Some Tips
-
-- Slides can be automatically played if you set the `autoplay` option under `nature`, e.g. go to the next slide every 30 seconds in a lightning talk:
-
-    ```yaml
-    output:
-      xaringan::moon_reader:
-        nature:
-          autoplay: 30000
-    ```
-
-- If you want to restart the play after it reaches the last slide, you may set the sub-option `loop` to TRUE, e.g.,
-
-    ```yaml
-    output:
-      xaringan::moon_reader:
-        nature:
-          autoplay:
-            interval: 30000
-            loop: true
-    ```
-
----
-
-# Some Tips
-
-- A countdown timer can be added to every page of the slides using the `countdown` option under `nature`, e.g. if you want to spend one minute on every page when you give the talk, you can set:
-
-    ```yaml
-    output:
-      xaringan::moon_reader:
-        nature:
-          countdown: 60000
-    ```
-
-    Then you will see a timer counting down from `01:00`, to `00:59`, `00:58`, ... When the time is out, the timer will continue but the time turns red.
-    
----
-
-# Some Tips
-
-- The title slide is created automatically by **xaringan**, but it is just another remark.js slide added before your other slides.
-
-    The title slide is set to `class: center, middle, inverse, title-slide` by default. You can change the classes applied to the title slide with the `titleSlideClass` option of `nature` (`title-slide` is always applied).
-
-    ```yaml
-    output:
-      xaringan::moon_reader:
-        nature:
-          titleSlideClass: [top, left, inverse]
-    ```
-    
---
-
-- If you'd like to create your own title slide, disable **xaringan**'s title slide with the `seal = FALSE` option of `moon_reader`.
-
-    ```yaml
-    output:
-      xaringan::moon_reader:
-        seal: false
-    ```
-
----
-
-# Some Tips
-
-- There are several ways to build incremental slides. See [this presentation](https://slides.yihui.org/xaringan/incremental.html) for examples.
-
-- The option `highlightLines: true` of `nature` will highlight code lines that start with `*`, or are wrapped in `{{ }}`, or have trailing comments `#<<`;
-
-    ```yaml
-    output:
-      xaringan::moon_reader:
-        nature:
-          highlightLines: true
-    ```
-
-    See examples on the next page.
-
----
-
-# Some Tips
-
-
+# Imagine that you need to...
 .pull-left[
-An example using a leading `*`:
+- submit an updated CV for a    
+job application as a pdf
 
-    ```r
-    if (TRUE) {
-    ** message("Very important!")
-    }
-    ```
-Output:
-```r
-if (TRUE) {
-* message("Very important!")
-}
-```
+- enter your CV into a horrible custom web form
 
-This is invalid R code, so it is a plain fenced code block that is not executed.
+- post your CV on your website
+
+- remember what you did Summer of 2009
 ]
 
-.pull-right[
-An example using `{{}}`:
 
-````
-`r ''````{r tidy=FALSE}
-if (TRUE) {
-*{{ message("Very important!") }}
-}
-```
-````
-Output:
-```{r tidy=FALSE}
-if (TRUE) {
-{{ message("Very important!") }}
-}
-```
-
-It is valid R code so you can run it. Note that `{{}}` can wrap an R expression of multiple lines.
-]
 
 ---
-
-# Some Tips
-
-An example of using the trailing comment `#<<` to highlight lines:
-
-````markdown
-`r ''````{r tidy=FALSE}
-library(ggplot2)
-ggplot(mtcars) + 
-  aes(mpg, disp) + 
-  geom_point() +   #<<
-  geom_smooth()    #<<
-```
-````
-
-Output:
-
-```{r tidy=FALSE, eval=FALSE}
-library(ggplot2)
-ggplot(mtcars) + 
-  aes(mpg, disp) + 
-  geom_point() +   #<<
-  geom_smooth()    #<<
-```
-
+class: center, middle
+# **What does that feel like?**
 ---
-
-# Some Tips
-
-When you enable line-highlighting, you can also use the chunk option `highlight.output` to highlight specific lines of the text output from a code chunk. For example, `highlight.output = TRUE` means highlighting all lines, and `highlight.output = c(1, 3)` means highlighting the first and third line.
-
-````md
-`r ''````{r, highlight.output=c(1, 3)}
-head(iris)
-```
-````
-
-```{r, highlight.output=c(1, 3), echo=FALSE}
-head(iris)
-```
-
-Question: what does `highlight.output = c(TRUE, FALSE)` mean? (Hint: think about R's recycling of vectors)
-
----
-
-# Some Tips
-
-- To make slides work offline, you need to download a copy of remark.js in advance, because **xaringan** uses the online version by default (see the help page `?xaringan::moon_reader`).
-
-- You can use `xaringan::summon_remark()` to download the latest or a specified version of remark.js. By default, it is downloaded to `libs/remark-latest.min.js`.
-
-- Then change the `chakra` option in YAML to point to this file, e.g.
-
-    ```yaml
-    output:
-      xaringan::moon_reader:
-        chakra: libs/remark-latest.min.js
-    ```
-
-- If you used Google fonts in slides (the default theme uses _Yanone Kaffeesatz_, _Droid Serif_, and _Source Code Pro_), they won't work offline unless you download or install them locally. The Heroku app [google-webfonts-helper](https://google-webfonts-helper.herokuapp.com/fonts) can help you download fonts and generate the necessary CSS.
-
----
-
-# Macros
-
-- remark.js [allows users to define custom macros](https://github.com/yihui/xaringan/issues/80) (JS functions) that can be applied to Markdown text using the syntax `![:macroName arg1, arg2, ...]` or `![:macroName arg1, arg2, ...](this)`. For example, before remark.js initializes the slides, you can define a macro named `scale`:
-
-    ```js
-    remark.macros.scale = function (percentage) {
-      var url = this;
-      return '<img src="' + url + '" style="width: ' + percentage + '" />';
-    };
-    ```
-
-    Then the Markdown text
-
-    ```markdown
-    ![:scale 50%](image.jpg)
-    ```
-
-    will be translated to
-    
-    ```html
-    <img src="image.jpg" style="width: 50%" />
-    ```
-
----
-
-# Macros (continued)
-
-- To insert macros in **xaringan** slides, you can use the option `beforeInit` under the option `nature`, e.g.,
-
-    ```yaml
-    output:
-      xaringan::moon_reader:
-        nature:
-          beforeInit: "macros.js"
-    ```
-
-    You save your remark.js macros in the file `macros.js`.
-
-- The `beforeInit` option can be used to insert arbitrary JS code before `remark.create()`. Inserting macros is just one of its possible applications.
-
----
-
-# CSS
-
-Among all options in `xaringan::moon_reader`, the most challenging but perhaps also the most rewarding one is `css`, because it allows you to customize the appearance of your slides using any CSS rules or hacks you know.
-
-You can see the default CSS file [here](https://github.com/yihui/xaringan/blob/master/inst/rmarkdown/templates/xaringan/resources/default.css). You can completely replace it with your own CSS files, or define new rules to override the default. See the help page `?xaringan::moon_reader` for more information.
-
----
-
-# CSS
-
-For example, suppose you want to change the font for code from the default "Source Code Pro" to "Ubuntu Mono". You can create a CSS file named, say, `ubuntu-mono.css`:
-
-```css
-@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
-
-.remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
-```
-
-Then set the `css` option in the YAML metadata:
-
-```yaml
-output:
-  xaringan::moon_reader:
-    css: ["default", "ubuntu-mono.css"]
-```
-
-Here I assume `ubuntu-mono.css` is under the same directory as your Rmd.
-
-See [yihui/xaringan#83](https://github.com/yihui/xaringan/issues/83) for an example of using the [Fira Code](https://github.com/tonsky/FiraCode) font, which supports ligatures in program code.
-
----
-
-# Themes
-
-Don't want to learn CSS? Okay, you can use some user-contributed themes. A theme typically consists of two CSS files `foo.css` and `foo-fonts.css`, where `foo` is the theme name. Below are some existing themes:
-
-```{r, R.options=list(width = 70)}
-names(xaringan:::list_css())
-```
-
----
-
-# Themes
-
-To use a theme, you can specify the `css` option as an array of CSS filenames (without the `.css` extensions), e.g.,
-
-```yaml
-output:
-  xaringan::moon_reader:
-    css: [default, metropolis, metropolis-fonts]
-```
-
-If you want to contribute a theme to **xaringan**, please read [this blog post](https://yihui.org/en/2017/10/xaringan-themes).
-
----
-class: inverse, middle, center
-background-image: url(https://upload.wikimedia.org/wikipedia/commons/3/39/Naruto_Shiki_Fujin.svg)
+background-image: url("./childs_play.jpg")
+background-position: center
 background-size: contain
+---
+# My next steps
 
-# Naruto
+Work on a custom look
++ might have to learn some `CSS`
+
+Make some additional templates
++ A pretty cover letter template
++ "From the desk of" template
+
+Learn a bit more about hiring laws/policies
+
 
 ---
-background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/be/Sharingan_triple.svg)
-background-size: 100px
-background-position: 90% 8%
+# Things I learned
 
-# Sharingan
+The dreaded, the encoding error...twice
 
-The R package name **xaringan** was derived<sup>1</sup> from **Sharingan**, a dōjutsu in the Japanese anime _Naruto_ with two abilities:
+```usethis::edit_r_profile()```
 
-- the "Eye of Insight"
+**xaringan**
++ Example of done is done
 
-- the "Eye of Hypnotism"
+Brave enough to start responding to issues on **Github**
 
-I think a presentation is basically a way to communicate insights to the audience, and a great presentation may even "hypnotize" the audience.<sup>2,3</sup>
+Though not brave enough yet for **StackOverflow**
 
-.footnote[
-[1] In Chinese, the pronounciation of _X_ is _Sh_ /ʃ/ (as in _shrimp_). Now you should have a better idea of how to pronounce my last name _Xie_.
+Stealing scripts
 
-[2] By comparison, bad presentations only put the audience to sleep.
-
-[3] Personally I find that setting background images for slides is a killer feature of remark.js. It is an effective way to bring visual impact into your presentations.
-]
-
+Reading package code
 ---
 
-# Naruto terminology
-
-The **xaringan** package borrowed a few terms from Naruto, such as
-
-- [Sharingan](https://naruto.fandom.com/wiki/Sharingan) (写輪眼; the package name)
-
-- The [moon reader](https://naruto.fandom.com/wiki/Moon_Reader) (月読; an attractive R Markdown output format)
-
-- [Chakra](https://naruto.fandom.com/wiki/Chakra) (查克拉; the path to the remark.js library, which is the power to drive the presentation)
-
-- [Nature transformation](https://naruto.fandom.com/wiki/Nature_Transformation) (性質変化; transform the chakra by setting different options)
-
-- The [infinite moon reader](https://naruto.fandom.com/wiki/Infinite_Tsukuyomi) (無限月読; start a local web server to continuously serve your slides)
-
-- The [summoning technique](https://naruto.fandom.com/wiki/Summoning_Technique) (download remark.js from the web)
-
-You can click the links to know more about them if you want. The jutsu "Moon Reader" may seem a little evil, but that does not mean your slides are evil.
-
----
-
-class: center
-
-# Hand seals (印)
-
-Press `h` or `?` to see the possible ninjutsu you can use in remark.js.
-
-![](https://upload.wikimedia.org/wikipedia/commons/7/7e/Mudra-Naruto-KageBunshin.svg)
-
----
 
 class: center, middle
 
 # Thanks!
 
+Reach out! 
+
+Twitter @MaraAlexeev
+
+Gmail mara dot alexeev at gmail dot com
+
 Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).
 
-The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](https://yihui.org/knitr), and [R Markdown](https://rmarkdown.rstudio.com).

@@ -19,3 +19,20 @@ rmarkdown::render("maras_cv.Rmd",
 # Convert to PDF using Pagedown
 pagedown::chrome_print(input = tmp_html_cv_loc,
                        output = "./docs/public_cv.pdf")
+
+######
+#For Long form CV
+# Knit the HTML version
+rmarkdown::render("MaraAlexeev_LongFormCV.Rmd",
+                  params = list(pdf_mode = FALSE),
+                  output_file = "./final_cvs/MaraAlexeev_LongFormCV.html")
+
+# Knit the PDF version to temporary html location
+tmp_html_cv_loc <- fs::file_temp(ext = ".html")
+rmarkdown::render("MaraAlexeev_LongFormCV.Rmd",
+                  params = list(pdf_mode = TRUE),
+                  output_file = tmp_html_cv_loc)
+
+# Convert to PDF using Pagedown
+pagedown::chrome_print(input = tmp_html_cv_loc,
+                       output = "./final_cvs/MaraAlexeev_LongFormCV.pdf")

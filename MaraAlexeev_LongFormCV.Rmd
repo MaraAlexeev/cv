@@ -55,13 +55,6 @@ knitr::include_graphics('./headshot.jpg')
 ```
 
 
-```{r}
-if(params$pdf_mode){
-  cat("View this CV online with links at maraalexeev.github.io/cv/")
-} else {
-  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/MaraAlexeev/cv/raw/master/docs/MaraAlexeev_LongFormCV.pdf)")
-}
-```
 
 Contact {#contact}
 --------------------------------------------------------------------------------
@@ -70,6 +63,12 @@ Contact {#contact}
 CV %>% print_contact_info()
 ```
 
+Language Skills {#skills}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %>% print_skill_bars()
+```
 
 
 Credits {#credits}
@@ -87,10 +86,6 @@ Main
 Mara Alexeev, MD, MPH {#title}
 --------------------------------------------------------------------------------
 
-```{r}
-# Note the special double pipe so we modify the CV object in place
-CV %<>% print_text_block("longform") 
-```
 
 
 Education {data-icon=graduation-cap data-concise=true}
@@ -127,16 +122,18 @@ CV %<>% print_section('medical_credentials')
 
 Awards and Honors  {data-icon=star data-concise=true}
 --------------------------------------------------------------------------------
-
-```{r}
-CV %<>% print_section('awards_honors')
-```
-
 ::: aside
 ```{r}
 CV %<>% print_text_block('awards_honors')
 ```
 :::
+
+```{r}
+CV %<>% print_section('awards_honors')
+```
+
+<br>
+<br>
 
 ```{r}
 CV %<>% print_links()

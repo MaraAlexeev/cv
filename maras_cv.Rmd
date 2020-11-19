@@ -13,6 +13,7 @@ output:
 ---
 
 ```{r, include=FALSE}
+Sys.setlocale(category = "LC_ALL", 'Russian')
 knitr::opts_chunk$set(
   results='asis', 
   echo = FALSE
