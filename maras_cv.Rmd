@@ -97,10 +97,10 @@ Main
 Mara Alexeev, MD, MPH {#title}
 --------------------------------------------------------------------------------
 
-```{r}
-# Note the special double pipe so we modify the CV object in place
-CV %<>% print_text_block("intro") 
-```
+<!-- ```{r} -->
+<!-- # Note the special double pipe so we modify the CV object in place -->
+<!-- CV %<>% print_text_block("intro")  -->
+<!-- ``` -->
 
 Relevant Skills {data-icon=fingerprint data-concise=true}
 --------------------------------------------------------------------------------
