@@ -109,6 +109,13 @@ Relevant Skills {data-icon=fingerprint data-concise=true}
 CV %<>% print_section('top_skills')
 ```
 
+Graduate Medical Education  {data-icon=hospital data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('postdoctoral_training')
+```
+
 
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
@@ -118,18 +125,6 @@ CV %<>% print_section('education')
 ```
 
 
-Graduate Medical Education  {data-icon=hospital data-concise=true}
---------------------------------------------------------------------------------
-
-```{r}
-CV %<>% print_section('postdoctoral_training')
-```
-
-::: aside
-```{r}
-CV %<>% print_text_block('postdoctoral_training')
-```
-:::
 
 Medical Work Experience {data-icon=user-md data-concise=true}
 --------------------------------------------------------------------------------
