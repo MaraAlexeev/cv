@@ -8,7 +8,7 @@
 # Knit the HTML version
 rmarkdown::render("maras_cv.Rmd",
                   params = list(pdf_mode = FALSE),
-                  output_file = "./docs/index.html")
+                  output_file = "./docs/index1.html")
 
 # Knit the PDF version to temporary html location
 tmp_html_cv_loc <- fs::file_temp(ext = ".html")

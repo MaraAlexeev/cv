@@ -116,7 +116,6 @@ Graduate Medical Education  {data-icon=hospital data-concise=true}
 CV %<>% print_section('postdoctoral_training')
 ```
 
-
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
@@ -125,6 +124,13 @@ CV %<>% print_section('education')
 ```
 
 
+
+
+<!-- ::: aside -->
+<!-- ```{r} -->
+<!-- CV %<>% print_text_block('postdoctoral_training') -->
+<!-- ``` -->
+<!-- ::: -->
 
 Medical Work Experience {data-icon=user-md data-concise=true}
 --------------------------------------------------------------------------------
@@ -149,11 +155,11 @@ Awards and Honors  {data-icon=star data-concise=true}
 CV %<>% print_section('awards_honors')
 ```
 
-::: aside
-```{r}
-CV %<>% print_text_block('awards_honors')
-```
-:::
+<!-- ::: aside -->
+<!-- ```{r} -->
+<!-- CV %<>% print_text_block('awards_honors') -->
+<!-- ``` -->
+<!-- ::: -->
 
 About Me {data-icon=flag data-concise=true}
 --------------------------------------------------------------------------------
