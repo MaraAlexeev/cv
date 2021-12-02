@@ -8,7 +8,7 @@
 # Knit the HTML version
 rmarkdown::render("maras_cv.Rmd",
                   params = list(pdf_mode = FALSE),
-                  output_file = "./docs/index1.html")
+                  output_file = "./docs/index.html")
 
 # Knit the PDF version to temporary html location
 tmp_html_cv_loc <- fs::file_temp(ext = ".html")
@@ -18,7 +18,7 @@ rmarkdown::render("maras_cv.Rmd",
 
 # Convert to PDF using Pagedown
 pagedown::chrome_print(input = tmp_html_cv_loc,
-                       output = "./docs/public_cv.pdf")
+                       output = "./docs/Mara_Alexeev_public_cv.pdf")
 
 ### 
 # For different versions of CV
