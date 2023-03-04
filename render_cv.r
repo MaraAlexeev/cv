@@ -1,4 +1,7 @@
-# This script builds both the HTML and PDF versions of your CV
+# Read this: 
+#These scripts build both the HTML and PDF versions of your CV
+#Update you should build (2023-03-04) is to save your old cvs in case you
+# need to rollback
 
 # If you wanted to speed up rendering for googlesheets driven CVs you could use
 # this script to cache a version of the CV_Printer class with data already
