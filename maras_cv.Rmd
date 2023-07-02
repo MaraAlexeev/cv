@@ -13,6 +13,12 @@ output:
 ---
 
 ```{r, include=FALSE}
+
+#Reminder of how to do things!!
+## Source data lives here 
+## https://docs.google.com/spreadsheets/d/1PmMnbfzEBmJhW71NHlgDGSlvhLdd4MQRCHSDBBNWqtQ
+##
+
 Sys.setlocale(category = "LC_ALL", 'Russian')
 knitr::opts_chunk$set(
   results='asis', 
