@@ -21,9 +21,11 @@ rmarkdown::render("maras_cv.Rmd",
 
 # Convert to PDF using Pagedown
 pagedown::chrome_print(input = tmp_html_cv_loc,
-                       output = "./docs/Mara_Alexeev_public_cv.pdf")
+                      output = "./docs/Mara_Alexeev_public_cv.pdf")
 
-### 
+
+
+###
 # For different versions of CV
 
 # Knit the HTML version
