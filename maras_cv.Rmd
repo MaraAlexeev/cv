@@ -17,7 +17,8 @@ output:
 #Reminder of how to do things!!
 ## Source data lives here 
 ## https://docs.google.com/spreadsheets/d/1PmMnbfzEBmJhW71NHlgDGSlvhLdd4MQRCHSDBBNWqtQ
-##
+## Change layout below
+## Render using render_cv.r script.
 
 Sys.setlocale(category = "LC_ALL", 'Russian')
 knitr::opts_chunk$set(
@@ -115,7 +116,7 @@ Currently Learning and Doing {data-icon=gear data-concise=true}
 CV %<>% print_section('top_skills')
 ```
 
-Graduate Medical Education  {data-icon=hospital data-concise=true}
+Informatics Work Experience  {data-icon=hospital data-concise=true}
 --------------------------------------------------------------------------------
 
 ```{r}
