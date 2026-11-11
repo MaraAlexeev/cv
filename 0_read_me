@@ -11,3 +11,11 @@ https://docs.google.com/spreadsheets/d/1PmMnbfzEBmJhW71NHlgDGSlvhLdd4MQRCHSDBBNW
 - Make the google sheet url a variable and store it in one spot
 
 # Feb 2025 Updates
+
+# HTML dependency maintenance
+
+The documentation template embeds the official jQuery 3.7.1 build from
+https://code.jquery.com/jquery-3.7.1.min.js. Its jQuery 1.11.3 copy and the two
+unreferenced jQuery 1.12.4 files in libs were removed in November 2026.
+When regenerating HTML, update the R Markdown tools first and check the bundled
+JavaScript versions before committing so that vulnerable copies do not return.
